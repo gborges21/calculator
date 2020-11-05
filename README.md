@@ -1,1 +1,1 @@
-# Calculator Challenge for a javascript class.
+# A simple Calculator for a Javascript class.
