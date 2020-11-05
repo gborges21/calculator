@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator Challenge</title>
+
+    <style>
+        header {
+            text-align: center;
+            color: white;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to bottom, rgb(84, 139, 241), rgb(239, 239, 243));
+        }
+
+        .container {
+            width: 330px;
+            height: 550px;
+            background-color: #86c5f0;
+            margin: auto;
+            top: 10px;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #idResultado {
+            text-align: right;
+            height: 45px;
+            padding-top: 15px;
+            padding-right: 5px;
+            margin: 3px 3px;
+            font-size: 30px;
+            color: white;
+        }
+
+        #idResult {
+            justify-content: space-between;
+            align-items: flex-end;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .clOperadores,
+        .clBotoesNumero {
+            width: 50px;
+            cursor: pointer;
+            height: 50px;
+            margin: 16px;
+            float: left;
+            border-radius: 30%;
+            border-width: 10;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: rgb(224, 222, 222);
+        }
+
+        footer {
+            text-align: center;
+            font-style: italic;
+            padding: 15px;
+            width: 400px;
+            margin: auto;
+            font-size: 25px;
+            color: rgb(84, 139, 241)
+        }
+
+        .keyboard {
+            height: 380px;
+        }
+
+        button:nth-child(1) {
+            font-size: 18px;
+            background-color: #20b2aa;
+        }
+
+        button:nth-child(2) {
+            font-size: 18px;
+            background-color: #7702a5;
+        }
+
+        button:nth-child(28) {
+            font-size: 18px;
+            background-color: #05c52e;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Calculator Challenge</h1>
+    </header>
+    <main>
+        <div class="container" id="idCalculadora">
+            <div class="clResultado" id="idResultado">
+                <output id="idResult"></output>
+            </div>
+            <div class="keyboard">
+                <button class="clOperadores" id="idClear">C</button>
+                <button class="clOperadores" id="idDeletar">DEL</button>
+                <button class="clOperadores" id="idRaizQua">√</button>
+                <button class="clOperadores" id="idNumNegativo">+-</button>
+                <br>
+                <button class="clOperadores" id="%">%</button>
+                <button class="clOperadores" id="idQuadrado">x²</button>
+                <button class="clOperadores" id="idDivX">1/x</button>
+                <button class="clOperadores" id="/">÷</button>
+                <br>
+                <button id="idSete" class="clBotoesNumero" value="7">7</button>
+                <button id="idSete" class="clBotoesNumero" value="8">8</button>
+                <button id="idNove" class="clBotoesNumero" value="9">9</button>
+                <button class="clOperadores" id="*">x</button>
+                <br>
+                <button id="idQuatro" class="clBotoesNumero" value="4">4</button>
+                <button id="idCinco" class="clBotoesNumero" value="5">5</button>
+                <button id="idSeis" class="clBotoesNumero" value="6">6</button>
+                <button class="clOperadores" id="-">-</button>
+                <br>
+                <button id="idUm" class="clBotoesNumero" value="1">1</button>
+                <button id="idDois" class="clBotoesNumero" value="2">2</button>
+                <button id="idTres" class="clBotoesNumero" value="3">3</button>
+                <button class="clOperadores" id="+">+</button>
+                <br>
+                <button id="idZero" class="clBotoesNumero" value="0">0</button>
+                <button id="idVirgula" class="clBotoesNumero" value=",">,</button>
+                <button class="clOperadores" id="=">=</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+<footer>
+    <h6>&copy; Entra21 - Guilherme Borges</h6>
+</footer>
+</html>
